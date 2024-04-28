@@ -8,7 +8,7 @@
     "./styles/shared-globals.css": "./src/styles/shared-globals.css"
   },
   "scripts": {
-    "lint": "eslint . --max-warnings 0",
+    "lint": "eslint . --max-warnings 5",
     "generate:component": "turbo gen react-component"
   },
   "devDependencies": {

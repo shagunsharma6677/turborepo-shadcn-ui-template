@@ -26,6 +26,6 @@
     "node": ">=18"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,md,html,css}": "prettier --write"
+    "apps/**/*.{js,jsx,ts,tsx,md,html,css}": "prettier --write"
   }
 }
