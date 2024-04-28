@@ -1,14 +1,14 @@
 import type { Config } from "tailwindcss";
 import animatePlugin from "tailwindcss-animate";
 
-const sharedConfig: Config={
+const sharedConfig: Config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-    "./**/*.{js,ts,jsx,tsx}"
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+    "./**/*.{js,ts,jsx,tsx}",
   ],
   prefix: "",
   theme: {
@@ -77,6 +77,6 @@ const sharedConfig: Config={
     },
   },
   plugins: [animatePlugin],
-}
+};
 
 export default sharedConfig;

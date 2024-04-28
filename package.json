@@ -5,18 +5,27 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "prepare": "husky",
+    "clean:node_modules": "rm -rf node_modules apps/web/node_modules apps/docs/node_modules packages/eslint-config/node_modules packages/tailwind-config/node_modules packages/ui/node_modules",
+    "clean:cache": "rm -rf .turbo apps/web/.next apps/web/.turbo apps/docs/.next apps/docs/.turbo",
+    "clean:all": "rm -rf node_modules apps/web/node_modules apps/docs/node_modules packages/eslint-config/node_modules packages/tailwind-config/node_modules packages/ui/node_modules .turbo apps/web/.next apps/web/.turbo apps/docs/.next apps/docs/.turbo"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
     "@repo/tailwing-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
     "@repo/ui": "workspace:*",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "prettier": "^3.1.1",
     "turbo": "^1.12.3"
   },
   "packageManager": "pnpm@8.9.0",
   "engines": {
     "node": ">=18"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,md,html,css}": "prettier --write"
   }
 }
