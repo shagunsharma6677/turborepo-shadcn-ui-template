@@ -23,15 +23,15 @@
     "prettier": "^3.1.1",
     "turbo": "^1.12.3"
   },
+  "lint-staged": {
+    "apps/**/*.{js,jsx,ts,tsx,md,html,css}": "prettier --write",
+    "packages/**/*.{js,jsx,ts,tsx,md,html,css}": "prettier --write"
+  },
   "packageManager": "pnpm@9.0.6",
   "engines": {
     "node": ">=18",
     "npm": "Please use pnpm",
     "yarn": "Please use pnpm"
-  },
-  "lint-staged": {
-    "apps/**/*.{js,jsx,ts,tsx,md,html,css}": "prettier --write",
-    "packages/**/*.{js,jsx,ts,tsx,md,html,css}": "prettier --write"
   },
   "config": {
     "commitizen": {
