@@ -12,6 +12,7 @@
     "clean:all": "rm -rf node_modules apps/web/node_modules apps/docs/node_modules packages/eslint-config/node_modules packages/tailwind-config/node_modules packages/ui/node_modules .turbo apps/web/.next apps/web/.turbo apps/docs/.next apps/docs/.turbo"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.27.1",
     "@repo/eslint-config": "workspace:*",
     "@repo/tailwing-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
